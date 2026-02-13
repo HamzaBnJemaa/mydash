@@ -1,0 +1,45 @@
+.work-card {
+  background-color: hsla(0, 0%, 100%, 0.231);
+  border-radius: 24px;
+  padding: 16px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.work-card__body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.work-card__actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.82);
+}
+
+.work-card__action-btn {
+  flex: 1;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 150ms ease;
+  color: white;
+}
+
+.work-card__action-btn--edit {
+  background-color: rgba(207, 207, 207, 0.2);
+  color: #d4d5d3;
+}
+
+.work-card__action-btn--delete {
+  background-color: rgba(242, 0, 0, 0.2);
+  color: #f20000;
+}

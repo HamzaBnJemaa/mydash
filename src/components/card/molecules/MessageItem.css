@@ -1,0 +1,21 @@
+.message-item {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 14px 16px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.message-item .message-sender-name {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #f4f4f4e2;
+}
+
+.message-item .message-body {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}

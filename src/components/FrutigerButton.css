@@ -1,0 +1,117 @@
+/* From Uiverse.io by SelfMadeSystem - FIRE EDITION */
+.frutiger-button {
+  cursor: pointer;
+  position: relative;
+  padding: 2px;
+  border-radius: 6px;
+  border: 0;
+  text-shadow: 1px 1px #000a;
+  background: linear-gradient(#cc0000, #ff4500);
+  box-shadow: 0px 4px 6px 0px #ff4500a0, 0px 0px 15px #ff2200;
+  transition: 0.3s all;
+  animation: fireGlow 2s ease-in-out infinite;
+}
+
+.frutiger-button:hover {
+  box-shadow: 0px 6px 12px 0px #ff5500a0, 0px 0px 25px #ff3300;
+  animation: fireGlow 1.5s ease-in-out infinite;
+}
+
+.frutiger-button:active {
+  box-shadow: 0px 0px 10px 0px #ff2200;
+}
+
+@keyframes fireGlow {
+  0%, 100% {
+    box-shadow: 0px 4px 6px 0px #ff4500a0, 0px 0px 15px #ff2200;
+  }
+  50% {
+    box-shadow: 0px 4px 6px 0px #ff5500a0, 0px 0px 25px #ff3300;
+  }
+}
+
+.inner {
+  position: relative;
+  inset: 0px;
+  padding: 1em;
+  border-radius: 4px;
+  background: radial-gradient(circle at 50% 100%, #ffaa00 10%, #ff6600 40%, #cc0000 100%),
+    linear-gradient(180deg, #ff2200, #cc0000);
+  overflow: hidden;
+  transition: inherit;
+}
+
+.inner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-65deg, #0000 30%, #ffff8080 45%, #0000 65%);
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+  animation: flameFlicker 0.8s ease-in-out infinite;
+}
+
+@keyframes flameFlicker {
+  0% {
+    background-position: 150%;
+    opacity: 0.6;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    background-position: -150%;
+    opacity: 0.5;
+  }
+}
+
+.top-white {
+  position: absolute;
+  border-radius: inherit;
+  inset: 0 -8em;
+  background: radial-gradient(
+    circle at 50% -270%,
+    #ffff99 45%,
+    #ffff6680 60%,
+    #ffff0000 60%
+  );
+  transition: inherit;
+}
+
+.inner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  transition: inherit;
+  box-shadow: inset 0px 2px 8px -2px #000000;
+}
+.frutiger-button:active .inner::after {
+  box-shadow: inset 0px 2px 8px -2px #ff2200;
+}
+
+.text {
+  position: relative;
+  z-index: 1;
+  color: #ffff99;
+  font-weight: 550;
+  transition: inherit;
+  text-shadow: 0px 0px 10px #ff4500;
+}
+
+/* Layout for button + gif */
+.frutiger-page {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.frutiger-gif {
+  width: 140px;
+  height: auto;
+}

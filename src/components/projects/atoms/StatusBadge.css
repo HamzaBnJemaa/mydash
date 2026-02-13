@@ -1,0 +1,24 @@
+.status-badge {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: inline-block;
+}
+
+.status-badge--in-progress {
+  background-color: rgba(255, 193, 7, 0.2);
+  color: #b8d900;
+}
+
+.status-badge--delayed {
+  background-color: rgba(232, 41, 41, 0.2);
+  color: #f20000;
+}
+
+.status-badge--completed {
+  background-color: rgba(0, 203, 71, 0.2);
+  color: #00f245;
+}

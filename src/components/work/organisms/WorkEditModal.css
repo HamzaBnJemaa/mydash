@@ -1,0 +1,179 @@
+.work-edit-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(182, 182, 182, 0.053);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 200ms ease;
+  padding: 20px;
+}
+.work-edit-modal {
+  background: linear-gradient(135deg, rgba(234, 234, 234, 0.502) 0%, rgba(255, 255, 255, 0.05) 100%);
+  border-radius: 24px;
+  padding: 32px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 254, 254, 0.955);
+  max-width: 500px;
+  width: 100%;
+}
+.work-edit-modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.work-edit-modal__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fefefe;
+  margin: 0;
+}
+
+.work-edit-modal__close {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #fefefe;
+  cursor: pointer;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 150ms ease;
+}
+
+.work-edit-modal__close:hover {
+  color: #ffffff;
+}
+
+.work-edit-modal__body {
+  margin-bottom: 24px;
+}
+
+.work-edit-modal__form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.work-edit-modal__label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fdfdfd;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.work-edit-modal__input,
+.work-edit-modal__textarea {
+  background-color: rgba(48, 48, 48, 0.758);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #efefef;
+  font-family: inherit;
+  transition: all 150ms ease;
+}
+
+.work-edit-modal__input:focus,
+.work-edit-modal__textarea:focus {
+  outline: none;
+  border-color: #ffffff;
+  background-color: rgba(21, 21, 21, 0.8);
+  box-shadow: 0 0 0 3px rgba(184, 217, 0, 0.1);
+}
+
+.work-edit-modal__input::placeholder,
+.work-edit-modal__textarea::placeholder {
+  color: rgba(254, 254, 254, 0.5);
+}
+
+.work-edit-modal__textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.work-edit-modal__tag-input-group {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.work-edit-modal__tag-input-group .work-edit-modal__input {
+  flex: 1;
+}
+
+.work-edit-modal__add-tag-btn {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fefefe;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 150ms ease;
+}
+.work-edit-modal__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.work-edit-modal__tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: rgba(207, 207, 207, 0.2);
+  color: #d4d5d3;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.work-edit-modal__tag-remove {
+  background: none;
+  border: none;
+  color: #d4d5d3;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  transition: color 150ms ease;
+}
+.work-edit-modal__footer {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.work-edit-modal__btn {
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 150ms ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.work-edit-modal__btn--cancel {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fefefe;
+}
+.work-edit-modal__btn--save {
+  background-color: #f8f8f8;
+  color: #151515;
+}

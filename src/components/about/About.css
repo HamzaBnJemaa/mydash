@@ -1,0 +1,15 @@
+
+.about-root {
+  color: #fafafa;
+  line-height: 1.6;
+    background-color: hsla(0, 0%, 100%, 0.231);
+    border-radius: 24px;
+    padding: 16px;
+    cursor: pointer;
+}
+.about-root h1 {
+  margin-bottom: 0.5rem;
+}
+.about-root p {
+  margin: 0.6rem 0;
+}

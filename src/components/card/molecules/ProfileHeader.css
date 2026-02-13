@@ -1,0 +1,15 @@
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.526);
+}
+
+.profile-header__search {
+  flex-shrink: 0;
+  margin-left: auto;
+    background: rgba(255, 255, 255, 0);
+
+}
